@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>People Detection</title>
+  </head>
+  <body>
+    <h1>People Detection</h1>
+    <form method="post" action="{{ url_for('tasks') }}">
+			<input type="submit" value="Stop/Start" name="stop" />
+			<input type="submit" value="Capture" name="click"/>
+			<input type="submit" value="Grey" name="grey" />
+			<input type="submit" value="Negative" name="neg" />
+			<input type="submit" value="Start/Stop Recording" name="rec" />
+			</form>
+      <br>
+    <img src="{{ url_for('video_feed') }}">
+  </body>
+</html>
